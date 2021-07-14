@@ -103,20 +103,34 @@
 							<div class="card-body p-0">
 								<div class="row" style="padding: 2%;">
 									<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-										<div class="c-video">
-											<video class="video" style="width:100%;">
-												<source src="<?=base_url() ?>/public/dist/video/1_1_Purpose_and_Audience.mp4" type="">
-											</video>
-											<div class="controls">
-												<div class="orange-bar">
-													<div class="orange-juice"></div>
-												</div>
-												<div class="buttons">
-													<button id="play-pause"></button>
-													<button id="back-play"><i class="fas fa-undo-alt"></i></button>
-												</div>
-											</div>
-										</div>
+										<?php switch ($module[0]['topic_tech_type']) {
+											case '2':
+												echo '<iframe src="https://suniltapse.com/eLearning/assets/lessions/Harvard-Yoga-Report.pdf#toolbar=0" style="width:100%;height:560px;"></iframe>';
+												break;
+
+											case '3':
+												echo '<audio style="width:100%;">
+														<source src="'.base_url().'/public/dist/video/file_example_MP3_700KB.mp3">
+													</audio>';
+												break;
+											
+											default:
+												echo '<div class="c-video">
+													<video class="video" style="width:100%;">
+														<source src="'.base_url().'/public/dist/video/1_1_Purpose_and_Audience.mp4" type="">
+													</video>
+													<div class="controls">
+														<div class="orange-bar">
+															<div class="orange-juice"></div>
+														</div>
+														<div class="buttons">
+															<button id="play-pause"></button>
+															<button id="back-play"><i class="fas fa-undo-alt"></i></button>
+														</div>
+													</div>
+												</div>';
+												break;
+										} ?>
 									</div>
 									<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="bottom: 0px;">
 										<h3>Instructions:</h3><hr>

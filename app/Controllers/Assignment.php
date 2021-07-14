@@ -71,6 +71,7 @@
 					'topic_eng_name' => $this->request->getVar('topic_eng_name'),
 					'topic_hin_name' => $this->request->getVar('topic_hin_name'),
 					'topic_mar_name' => $this->request->getVar('topic_mar_name'),
+					'topic_tech_type' => $this->request->getVar('topic_tech_type'),
 					'topic_eng_video_link' => $this->request->getVar('topic_eng_video_link'),
 					'topic_hin_video_link' => $this->request->getVar('topic_hin_video_link'),
 					'topic_mar_video_link' => $this->request->getVar('topic_mar_video_link'),

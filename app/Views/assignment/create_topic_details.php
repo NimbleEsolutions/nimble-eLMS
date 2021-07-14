@@ -61,21 +61,32 @@
 									<div class="col-sm-4">
 										<!-- text input -->
 										<div class="form-group">
-											<label>Topic Video Link ( English Topic )<span class="mandatory"> * </span></label>
+											<label>Link Type<span class="mandatory"> * </span></label><br>
+											<input type="radio" class="" name="topic_tech_type" checked=""> Video &nbsp
+											<input type="radio" class="" name="topic_tech_type"> Pdf &nbsp
+											<input type="radio" class="" name="topic_tech_type"> Audio &nbsp
+										</div>
+									</div>								
+								</div>
+								<div class="row">
+									<div class="col-sm-4">
+										<!-- text input -->
+										<div class="form-group">
+											<label>Topic Video/Pdf/Audio Link ( English Language )<span class="mandatory"> * </span></label>
 											<input type="text" class="form-control" placeholder="Enter module link ..." name="topic_eng_video_link">
 										</div>
 									</div>
 									<div class="col-sm-4">
 										<!-- text input -->
 										<div class="form-group">
-											<label>विषयांची विडिओ लिंक ( हिंदी विषयांची)<span class="mandatory"> * </span></label>
+											<label>विषयांची विडिओ/पीडीएफ/ऑडिओ/ लिंक ( हिंदी भाषा)<span class="mandatory"> * </span></label>
 											<input type="text" class="form-control" placeholder="Enter module link ..." name="topic_hin_video_link">
 										</div>
 									</div>
 									<div class="col-sm-4">
 										<!-- text input -->
 										<div class="form-group">
-											<label>विषयांची विडिओ लिंक ( मराठी विषयांची )<span class="mandatory"> * </span></label>
+											<label>विषयांची विडिओ/पीडीएफ/ऑडिओ लिंक ( मराठी भाषा )<span class="mandatory"> * </span></label>
 											<input type="text" class="form-control" placeholder="Enter module link ..." name="topic_mar_video_link">
 										</div>
 									</div>									
